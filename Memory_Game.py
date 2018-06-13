@@ -23,9 +23,9 @@ def img(filename):
     return b.static_file(filename, root='images')
 
 
-@get('/sound/<filename:re:.*\.mp3>')
+@get('/sounds/<filename:re:.*\.mp3>')
 def music(filename):
-    return b.static_file(filename, root='sound')
+    return b.static_file(filename, root='sounds')
 
 
 @get('/font/<filename:re:.*\.ttf>')
