@@ -140,3 +140,35 @@ body {
 .match {
     transform: rotateY(180deg);
 }
+
+@media only screen and (max-width: 450px) {
+    #title{
+        font-size: 33px;
+    }
+    .card,
+    .back,
+    .front {
+        height: 130px;
+        width: 80px;
+        margin-top: 20px;
+        margin-left: 8px;
+    }
+    .selected{
+        position: relative;
+        right: 44px;
+    }
+    #start-btn, #reset-btn {
+        width: 100px;
+        height: 70px;
+        font-size: 20px;
+    }
+    #start-btn{
+        left: 25%;
+    }
+    #modal1, #modal2{
+        left: 15%;
+    }
+    #game{
+        left: 0%;
+    }
+}
