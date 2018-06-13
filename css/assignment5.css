@@ -1,0 +1,142 @@
+@font-face {
+    font-family: myFont;
+    src : url(../font/get_schwifty__a_rick_and_morty_font_by_jonizaak-dajw4u8.ttf);
+}
+
+body {
+    background-image: url("../images/6DjNM5C.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: myFont;
+}
+
+#title {
+    color: rgb(26, 185, 177);
+    text-shadow: 4px 0 black;
+    font-size: 60px;
+    text-align: center;
+    
+}
+#modal1, #modal2 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 41%;
+    top: 15%;
+    width: 300px; 
+    height: 150px; 
+    background-color: rgba(0,0,0,0.8); 
+}
+
+#modal2 {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 41%;
+    top: 20%;
+    height: 230px;
+}
+
+.modal-content {
+    background-color: rgb(26, 185, 177);
+    margin: 4% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    font-size: 29px;
+    text-align: center;
+}
+
+#modal2 .modal-content {
+    margin: 2% auto;
+    padding: 0;
+    font-size: 28px;
+}
+#easy, #medium, #hard {
+    color: rgb(26, 185, 177);
+    background: black;
+    font-family: myFont;
+    cursor: pointer;    
+}
+#game {
+    position: absolute;
+    left: 22%;
+    top: 10%;
+}
+
+#start-btn, #reset-btn {
+    position: absolute;
+    left: 45%;
+    width: 150px;
+    height: 100px;
+    font-size: 25px;
+    color: rgb(26, 185, 177);
+    background: black;
+    font-family: myFont;
+    cursor: pointer;
+}
+
+#reset-btn {
+    left: 55%;
+}
+.grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-size: 144%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    transition: all .4s linear;
+    transform-style: preserve-3d;
+}
+
+.card,
+.back,
+.front {
+    height: 250px;
+    width: 150px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.back,
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-image: url("../images/613UlGuu8uL._SX342_.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 160%;
+    border-radius: 30px;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-size: 166%;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    right: 60px;
+}
+
+.selected {
+    transform: rotateY(180deg);
+}
+
+.match {
+    transform: rotateY(180deg);
+}
